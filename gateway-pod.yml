@@ -1,0 +1,13 @@
+apiCersion: v1
+kind: Pod
+metadata:
+    name: gateway-pod
+    labels:
+        app: gateway
+        type: microservice
+spec:
+    containers:
+    - name: gateway-app
+      image: camilocaste/serviciosapigateway:latest
+      ports: 
+        - containerPort: 80
