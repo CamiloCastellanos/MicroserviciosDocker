@@ -22,6 +22,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "kubernetes", "kubernetes", 
 		mongo-service.yml = mongo-service.yml
 		sqlserver-deploy.yml = sqlserver-deploy.yml
 		sqlserver-pod.yml = sqlserver-pod.yml
+		sqlserver-service.yml = sqlserver-service.yml
 	EndProjectSection
 EndProject
 Global
