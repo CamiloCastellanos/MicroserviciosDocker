@@ -14,6 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "kubernetes", "kubernetes", 
 		microservice-libreria-deploy.yml = microservice-libreria-deploy.yml
 		microservicios-libreria-pod.yml = microservicios-libreria-pod.yml
 		microservice-seguridad-pod.yml = microservice-seguridad-pod.yml
+		mongo-deploy.yml = mongo-deploy.yml
 		mongo-pod.yml = mongo-pod.yml
 		sqlserver-pod.yml = sqlserver-pod.yml
 	EndProjectSection
