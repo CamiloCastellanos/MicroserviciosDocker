@@ -138,3 +138,10 @@ $RECYCLE.BIN/
 .DS_Store
 
 _NCrunch*
+/Servicios.api.Seguridad/obj/Debug/net5.0/Servicios.api.Seguridad.AssemblyInfoInputs.cache
+/.vs/Microservices/DesignTimeBuild/.dtbcache.v2
+/Servicios.api.Gateway/obj/Debug/net5.0/Servicios.api.Gateway.AssemblyInfo.cs
+/Servicios.api.Gateway/obj/Debug/net5.0/Servicios.api.Gateway.AssemblyInfoInputs.cache
+/Servicios.api.Libreria/obj/Debug/net5.0/Servicios.api.Libreria.AssemblyInfoInputs.cache
+/Servicios.api.Libreria/obj/Debug/net5.0/Servicios.api.Libreria.AssemblyInfo.cs
+/Servicios.api.Seguridad/obj/Debug/net5.0/Servicios.api.Seguridad.AssemblyInfo.cs
