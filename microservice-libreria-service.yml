@@ -6,11 +6,10 @@ metadata:
         name: microservice-libreria-service
         app: microservice
 spec:
- type: LoadBalancer
+ type: ClusterIp
  ports:
   - port: 80
     tagetPort: 80
-    nodePort: 30008
  selector:
     app: microservice-libreria
     type: microservice   
