@@ -1,0 +1,21 @@
+apiCersion: v1
+kind: Pod
+metadata:
+    name: mongo-pod
+    labels:
+        app: microservice-libreria
+        type: database
+spec:
+    containers:
+    - name: mongo
+      image: mongo:4.2.12
+      command:
+      - /bin/bash
+      - -c
+      env:
+      - name: MONGO_INITDB_ROOT_USERNAME
+        value: "camilo"
+      - name: MONGO_INITDB_ROOT_PASSWORD
+        value: "$Camilo2025"
+      ports: 
+        - containerPort: 27017      

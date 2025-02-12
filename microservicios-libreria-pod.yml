@@ -10,6 +10,4 @@ spec:
     - name: microservice-libreria-app
       image: camilocaste/serviciosapilibreria:latest
       ports: 
-        - containerPort: 80
-
-        
+        - containerPort: 80        
