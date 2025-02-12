@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35806.99 d17.13
+VisualStudioVersion = 17.13.35806.99
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Servicios.api.Libreria", "Servicios.api.Libreria\Servicios.api.Libreria.csproj", "{FF4FC2C6-5F3C-4365-84AC-DF3D9DAA4765}"
 EndProject
@@ -12,9 +12,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "kubernetes", "kubernetes", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 	ProjectSection(SolutionItems) = preProject
 		microservice-libreria-deploy.yml = microservice-libreria-deploy.yml
+		microservice-libreria-service.yml = microservice-libreria-service.yml
 		microservice-seguridad-deploy.yml = microservice-seguridad-deploy.yml
-		microservicios-libreria-pod.yml = microservicios-libreria-pod.yml
 		microservice-seguridad-pod.yml = microservice-seguridad-pod.yml
+		microservicios-libreria-pod.yml = microservicios-libreria-pod.yml
 		mongo-deploy.yml = mongo-deploy.yml
 		mongo-pod.yml = mongo-pod.yml
 		sqlserver-deploy.yml = sqlserver-deploy.yml
