@@ -1,28 +1,28 @@
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
- name: microservice-libreria-deploy
- labels:
+  labels:
+    app: microservice
+    name: microservice-libreria-deploy
   name: microservice-libreria-deploy
-  app: microservice	
 spec:
- replicas: 2
- selector:
+  replicas: 2
+  selector:
     matchLabels:
+      app: microservice-libreria
+      type: microservice
+  template:
+    metadata:
+      labels:
         app: microservice-libreria
         type: microservice
- template: 
-    metadata:
-        name: microservice-libreria-pod
-        labels:
-            app: microservice-libreria
-            type: microservice
+      name: microservice-libreria-pod
     spec:
-        containers:
+      containers:
         - name: microservice-libreria-app
           image: camilocaste/serviciosapilibreria:latest
-          ports: 
-            - containerPort: 80   
-    env:
-       - name: MongoDb__ConnectionString
-         value: mongodb://camilo:$Camilo2025@mongo-service:27017
+          ports:
+            - containerPort: 80
+          env:
+            - name: MongoDb__ConnectionString
+              value: "mongodb://camilo:$Camilo2025@mongo-service:27017"
