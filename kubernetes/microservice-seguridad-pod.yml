@@ -1,16 +1,16 @@
-apiCersion: v1
+apiVersion: v1
 kind: Pod
 metadata:
-    name: microservice-seguridad-pod
-    labels:
-        app: microservice-seguridad
-        type: microservice
+  name: microservice-seguridad-pod
+  labels:
+    app: microservice-seguridad
+    type: microservice
 spec:
-    containers:
+  containers:
     - name: microservice-seguridad-app
       image: camilocaste/serviciosapiseguridad:latest
       ports: 
         - containerPort: 80
       env:
-       - name: ConnectionStrings__ConexionDB
-         value: Server=mssql-service;Database=Seguridad;User=sa;Password=$Camilo2025
+        - name: ConnectionStrings__ConexionDB
+          value: Server=mssql-service;Database=Seguridad;User=sa;Password=$Camilo2025

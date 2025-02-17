@@ -1,18 +1,18 @@
-apiCersion: v1
+apiVersion: v1
 kind: Pod
 metadata:
+  name: mssql-pod
+  labels:
+    app: microservice-seguridad
     name: mssql-pod
-    labels:
-        app: microservice-seguridad
-        name: mssql-pod
 spec:
-    containers:
+  containers:
     - name: mssql
       image: mcr.microsoft.com/mssql/server
       ports: 
         - containerPort: 1433
       env:
-      - name: ACCEPT_EULA
-        value: "Y"
-      - name: SA_PASSWORD
-        value: "$Camilo2025"
+        - name: ACCEPT_EULA
+          value: "Y"
+        - name: SA_PASSWORD
+          value: "$Camilo2025"
