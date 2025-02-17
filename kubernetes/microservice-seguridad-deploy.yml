@@ -1,28 +1,28 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
- name: microservice-seguridad-deploy
- labels:
   name: microservice-seguridad-deploy
-  app: microservice	
+  labels:
+    name: microservice-seguridad-deploy
+    app: microservice
 spec:
- replicas: 2
- selector:
+  replicas: 2
+  selector:
     matchLabels:
+      app: microservice-seguridad
+      type: microservice
+  template: 
+    metadata:
+      name: microservice-seguridad-pod
+      labels:
         app: microservice-seguridad
         type: microservice
- template: 
-    metadata:
-        name: microservice-seguridad-pod
-        labels:
-            app: microservice-seguridad
-            type: microservice
     spec:
-        containers:
+      containers:
         - name: microservice-seguridad-app
           image: camilocaste/serviciosapiseguridad:latest
           ports: 
             - containerPort: 80
-    env:
-       - name: ConnectionStrings__ConexionDB
-         value: Server=mssql-service;Database=Seguridad;User=sa;Password=$Camilo2025
+          env:
+            - name: ConnectionStrings__ConexionDB
+              value: Server=mssql-service;Database=Seguridad;User=sa;Password=$Camilo2025
