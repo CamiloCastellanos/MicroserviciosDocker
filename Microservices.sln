@@ -11,21 +11,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Servicios.api.Gateway", "Se
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "kubernetes", "kubernetes", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 	ProjectSection(SolutionItems) = preProject
-		gateway-deploy.yml = gateway-deploy.yml
-		gateway-service.yml = gateway-service.yml
-		microservice-libreria-deploy.yml = microservice-libreria-deploy.yml
-		gateway-pod.yml = gateway-pod.yml
-		microservice-libreria-service.yml = microservice-libreria-service.yml
-		microservice-libreria-pod.yml = microservice-libreria-pod.yml
-		microservice-seguridad-deploy.yml = microservice-seguridad-deploy.yml
-		microservice-seguridad-pod.yml = microservice-seguridad-pod.yml
-		microservice-seguridad-service.yml = microservice-seguridad-service.yml
-		mongo-deploy.yml = mongo-deploy.yml
-		mongo-pod.yml = mongo-pod.yml
-		mongo-service.yml = mongo-service.yml
-		sqlserver-deploy.yml = sqlserver-deploy.yml
-		sqlserver-pod.yml = sqlserver-pod.yml
-		sqlserver-service.yml = sqlserver-service.yml
+		kubernetes\gateway-deploy.yml = kubernetes\gateway-deploy.yml
+		kubernetes\gateway-pod.yml = kubernetes\gateway-pod.yml
+		kubernetes\gateway-service.yml = kubernetes\gateway-service.yml
+		kubernetes\microservice-libreria-deploy.yml = kubernetes\microservice-libreria-deploy.yml
+		kubernetes\microservice-libreria-pod.yml = kubernetes\microservice-libreria-pod.yml
+		kubernetes\microservice-libreria-service.yml = kubernetes\microservice-libreria-service.yml
+		kubernetes\microservice-seguridad-deploy.yml = kubernetes\microservice-seguridad-deploy.yml
+		kubernetes\microservice-seguridad-pod.yml = kubernetes\microservice-seguridad-pod.yml
+		kubernetes\microservice-seguridad-service.yml = kubernetes\microservice-seguridad-service.yml
+		kubernetes\mongo-deploy.yml = kubernetes\mongo-deploy.yml
+		kubernetes\mongo-pod.yml = kubernetes\mongo-pod.yml
+		kubernetes\mongo-service.yml = kubernetes\mongo-service.yml
+		kubernetes\sqlserver-deploy.yml = kubernetes\sqlserver-deploy.yml
+		kubernetes\sqlserver-pod.yml = kubernetes\sqlserver-pod.yml
+		kubernetes\sqlserver-service.yml = kubernetes\sqlserver-service.yml
 	EndProjectSection
 EndProject
 Global
