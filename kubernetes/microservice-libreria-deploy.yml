@@ -1,5 +1,5 @@
 apiVersion: app/v1
-king: Deployment
+kind: Deployment
 metadata:
  name: microservice-libreria-deploy
  labels:
