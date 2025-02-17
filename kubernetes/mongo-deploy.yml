@@ -28,6 +28,6 @@ spec:
             - name: MONGO_INITDB_ROOT_USERNAME
               value: "camilo"
             - name: MONGO_INITDB_ROOT_PASSWORD
-              value: "$Camilo2025"
+              value: "$Camilo2025$"
           ports: 
             - containerPort: 27017
